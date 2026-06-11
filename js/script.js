@@ -2,7 +2,7 @@ const $ = (id) => document.getElementById(id);
 
 const apiRickAndMorty = "https://rickandmortyapi.com/api/character/";
 const apiUsuario = "https://jsonplaceholder.typicode.com/users/1";
-const apiFrase = "https://api.quotable.io/random";
+const apiFrase = "https://dummyjson.com/quotes/random";
 
 const botonPersonaje = $("btnPersonaje");
 const cajaPersonaje = $("resultado");
@@ -103,7 +103,7 @@ function pintarFrase(frase) {
     if (!cajaFrase) return;
 
     cajaFrase.innerHTML = `
-        <p>"${frase.content}"</p>
+        <p>"${frase.quote}"</p>
         <p><em>- ${frase.author}</em></p>
     `;
 }
